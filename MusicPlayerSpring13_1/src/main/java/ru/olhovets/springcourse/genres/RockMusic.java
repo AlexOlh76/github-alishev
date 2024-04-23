@@ -1,0 +1,26 @@
+package ru.olhovets.springcourse.genres;
+
+
+import ru.olhovets.springcourse.Music;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
+
+public class RockMusic implements Music {
+
+//    @PostConstruct
+//    public void doMyInit() {
+//        System.out.println("Doing my initialization");
+//    }
+//
+//    @PreDestroy
+//    public void doMyDestroy() {
+//        System.out.println("Doing my destruction");
+//    }
+
+    @Override
+    public String getSong() {
+        return "Wind cries Mary";
+    }
+}
